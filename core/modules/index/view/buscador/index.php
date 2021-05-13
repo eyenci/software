@@ -28,12 +28,12 @@ $con = connect();
 if (!$con->set_charset("utf8")) {//asignamos la codificación comprobando que no falle
        die("Error cargando el conjunto de caracteres utf8");
 }
-$consulta = "SELECT * FROM lista_paises";
+$consulta = "SELECT * FROM product";
 $resultado = mysqli_query($con , $consulta);
 $contador=0;
 
 while($misdatos = mysqli_fetch_assoc($resultado)){ $contador++;?>
-<option data-subtext="<?php echo $misdatos["iso"]; ?>"><?php echo $misdatos["nombre_pais"]; ?></option>
+<option data-subtext="<?php echo $misdatos["name"]; ?>"><?php echo $misdatos["price_out"]; ?></option>
 <?php }?>          
 </select>
 

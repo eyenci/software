@@ -248,8 +248,10 @@ switch ($sell->item_id) {
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+  
   </td>
 </tr>
+
 <?php
 	}
 	?>
@@ -270,9 +272,9 @@ if($user->is_admin):?>
 <!--
 <h1>Total: S/ <?php echo number_format($total); ?></h1>
 -->
-
-
-
+<center>
+<a href="javascript:history.back()"> Volver Atrás</a>
+</center>
 <?php if($sell->is_applied):?>
 
 

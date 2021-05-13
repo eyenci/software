@@ -6,7 +6,7 @@ $user = UserData::getById(Session::getUID());
 
 
                 <section class="content-header">
-                       		<h1>Monitor</h1>
+                       		<h1>Monitor...</h1>
 
                 </section>
 
@@ -104,7 +104,7 @@ $sells = SellData::getAllUnAppliedByItemId($career->id);
 </table>
 </div>
 
-
+<a href="javascript:history.back()"> Volver Atrás</a>
 
 </section>
                         

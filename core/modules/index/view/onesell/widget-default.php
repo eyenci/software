@@ -115,6 +115,9 @@ switch ($sell->item_id) {
 
 
 <a href="index.php?view=onesell2&id=<?php echo $_GET["id"]; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> Comanda</a>
+<label>|---|</label>
+
+<a href="index.php?view=onesell2&id=<?php echo $_GET["id"]; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> Buscador</a>
 
 <?php endif; ?>
 
@@ -144,6 +147,7 @@ switch ($sell->item_id) {
 
 
 <!-- agregar producto-->
+<!-- form de agregar producto -->
 
 <select name="product_id" class="form-control" required>
 		<option value="">-- SELECCIONA UN PRODUCTO -- </option>
@@ -168,14 +172,10 @@ switch ($sell->item_id) {
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
     <input type="hidden" name="sell_id" value="<?php echo $_GET["id"];?>">
+    
       <button type="submit" class="btn btn-primary">Agregar Producto</button>
     </div>
   </div>
-
-
-
-
-
 
 
 </form>

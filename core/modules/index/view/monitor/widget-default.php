@@ -63,8 +63,8 @@ $sells = SellData::getAllUnAppliedByItemId($career->id);
         <?php if(count($operations)>0):?>
             <table class="table table-bordered">
             <tr>
-                <td><a href="./?view=onesell&id=<?php echo $s->id;?>"  class="btn btn-xs btn-default" target="_blank">Id: <?php echo $s->id; ?></a></td>
-                <td>Mesero: <?php echo $mesero->name." ".$mesero->lastname;?></td>
+                <td><a href="./?view=onesell&id=<?php echo $s->id;?>"  class="btn btn-xs btn-default" target="_blank">Id: <?php echo $s->id; ?></a> Editar Mesa <a href="./?view=editmonitor&id=<?php echo $s->id;?>"  class="glyphicon glyphicon-pencil" target="_blank">Id: <?php echo $s->id; ?></a></td>
+                <td>Mesero: <?php echo $mesero->name." ".$mesero->lastname;?> </a>||<a href="./?view=unirmesas&id=<?php echo $s->id;?>"  class="glyphicon glyphicon-pencil" target="_blank">Unir mesas <?php echo $s->id; ?></a></td>
                 <td></td>
             </tr>
             <tr>

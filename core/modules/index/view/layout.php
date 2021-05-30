@@ -59,6 +59,7 @@ if(Session::getUID()!=""):
           <ul class="nav navbar-nav side-nav">
           <li><a href="./?view=home"><i class="fa fa-home"></i> Inicio</a></li>
           <li><a href="./?view=monitor"><i class="fa fa-eye"></i> Monitor</a></li>
+           <li><a href="./?view=editmonitor"><i class="fa fa-eye"></i> Editar mesa</a></li>
           <li><a href="index.php?view=sell"><i class="fa fa-usd"></i> Vender</a></li>
           <li><a href="index.php?view=sells"><i class="fa fa-shopping-cart"></i> Ventas</a></li>
 
